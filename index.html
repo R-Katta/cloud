@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Converter</title>
+    </head>
+    <body>
+        <style>body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        #converter {
+            margin-top: 50px;
+        }
+        
+        input, select, button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+        }
+        
+        h2 {
+            color: #555;
+            margin-top: 50px;
+        }
+        </style>
+        <h1>Temperature Converter</h1>
+
+        <div id="converter" class="body">
+            <input type="number" id="inputValue" placeholder="Enter temperature">
+
+            <select id="tempType">
+                <option value="c">Celsius</option>
+                <option value="f">Fahrenheit</option>
+            </select>
+            <div class="button">
+            <button onclick="convertTemp()">Convert</button>
+            </div>
+        </div>
+    <div class="h2">
+        <h2 id="output"> </h2>
+    </div>
+        <script src="script.js"></script>
+    </body>
+</html>
